@@ -1,0 +1,93 @@
+header {
+  padding: 20px;
+  background-color: $primary-color;
+
+
+  &.navbar-primary {
+    .btn {
+      margin: 0 10px;
+
+      &.btn-primary {
+        background-color: transparent;
+        color: $light-color;
+        border-color: $light-color;
+
+        &:focus,
+        &:hover {
+          background: darken($primary-color-dark, 2%);
+        }
+
+        &.active {
+          background-color: $light-color;
+          color: $primary-color;
+          border-color: $light-color;
+        }
+      }
+    }
+  }
+}
+
+.content {
+
+  margin: 40px;
+
+  .view {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.mt > div {
+  margin-top: 20px;
+}
+
+.pagination-item {
+  background-color: $bg-color-dark;
+  padding: 10px 15px;
+  line-height: 16px;
+  display: inline-block;
+  height: 36px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.current {
+    background-color: $primary-color;
+    color: $light-color;
+  }
+
+  &.previous i,
+  &.next i {
+    vertical-align: bottom;
+  }
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .form-input-hint {
+    transition: opacity .5s;
+    opacity: 0;
+    margin-bottom: .2em;
+  }
+
+  .has-error .form-input-hint {
+    opacity: 1;
+  }
+}
+
+[data-view="single"] {
+  .table {
+    width: 600px;
+    margin: 0 auto;
+
+    input {
+      border: 0;
+    }
+  }
+}

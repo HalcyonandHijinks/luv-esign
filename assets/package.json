@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "datatables.net-dt": "^1.10.16",
     "spectre.css": "^0.5.0"
   }
 }
